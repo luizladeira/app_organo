@@ -1,0 +1,30 @@
+.time {
+    text-align: center;
+    padding: 32px;
+    left: 0px;
+    background: rgba(0, 200, 111, 0.15);
+    margin-bottom: 10px;
+}
+
+.time section {
+    margin-bottom: 10% 30% 30%;
+}
+
+.time h3 {
+    font-size: 1.5em;
+    border-bottom: 4px solid;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px;
+}
+
+.time .colaboradores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap; 
+}

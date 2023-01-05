@@ -4,7 +4,7 @@
 Criar organogramas com react js
 
 # Link do Curso no ALURA
-[ALURA - Curso de React: desenvolvendo com JavaScript](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128
+[ALURA - Curso de React: desenvolvendo com JavaScript](https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?node-id=134%3A128)
 
 # Layout FIGMA
 [Layout do Curso](https://cursos.alura.com.br/course/react-desenvolvendo-javascript) 

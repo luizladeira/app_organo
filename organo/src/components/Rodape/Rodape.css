@@ -1,0 +1,24 @@
+.footer {
+    background-color: #6278F7;
+    color: #FFF;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+    height: 21px;
+    width: 21px;
+}
+
+.footer .redes-sociais ul li img{
+    height: 21px;
+    width: 21px;
+}
+
+.footer ul li:last-child{
+    margin-right: 0;
+}
