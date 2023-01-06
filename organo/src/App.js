@@ -48,8 +48,8 @@ function App() {
   const [colaboradores, setColaboradores] = useState([]) //LISTA DE COLABORES
   const aoNovoColaboradorAdd = (colaborador) => {
     //console.log(colaborador)
-    //setColaboradores([...colaboradores, colaborador])  = coloca os array antigo e insere o ultimo colaborador
-    setColaboradores([...colaboradores, colaborador]) 
+    //debugger - ele para a execução e mostra o que tá acontecendo
+    setColaboradores([...colaboradores, colaborador]) // coloca os array antigo e insere o ultimo colaborador
   }
 
   return (
