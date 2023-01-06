@@ -11,17 +11,13 @@ const Rodape = () => {
                 </ul>
             </section>
             <section>
-                    <img src="/imagens/logo.png" />
+                <img src="/imagens/logo.png" />
             </section>
             <section>
-                    <p>
-                        Curso Concluído na Alura
-                    </p>
-                    <p>
-                        Layout By <a href="https://cursos.alura.com.br/course/react-desenvolvendo-javascript" title="Curso de React: desenvolvendo com JavaScript" alt="Curso de React: desenvolvendo com JavaScript - Alura">Alura</a>
-                    </p>
-           </section>
-
+                <p className="layout-by">
+                    Curso/Layout da <a href="https://cursos.alura.com.br/course/react-desenvolvendo-javascript" title="Curso de React: desenvolvendo com JavaScript da Alura" alt="Curso de React: desenvolvendo com JavaScript da Alura">Alura</a>
+                </p>
+            </section>
         </footer>
     )
 }

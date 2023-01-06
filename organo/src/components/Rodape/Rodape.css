@@ -22,3 +22,11 @@
 .footer ul li:last-child{
     margin-right: 0;
 }
+
+.layout-by a{
+    color: rgb(255, 138, 41);
+}
+
+.layout-by a:hover{
+    color: rgb(255, 238, 15);
+}
