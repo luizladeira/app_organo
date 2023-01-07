@@ -1,35 +1,33 @@
 import Colaborador from '../Colaborador'
 import './Time.css'
 
-const Time = (props) => {
-    console.log(props.corPrimaria + ' | ' + props.corSegundaria)
-
-    const css_segundaria = { backgroundColor: props.corSegundaria }
+const Time = ({ time, colaboradores }) => {
+    const css_segundaria = { backgroundColor: time.corSegundaria }
 
     return (
-        (props.colaboradores.length > 0) ?
+        (colaboradores.length > 0) ?
 
             <section className="time" style={css_segundaria} >
-                <h3 style={{ borderColor: props.corPrimaria }}>
-                    {props.nome}
+                <h3 style={{ borderColor: time.corPrimaria }}>
+                    {time.nome}
                 </h3>
 
                 <div className="colaboradores">
                     {
-                        props.colaboradores.map(colaborador =>
-                            <Colaborador key={colaborador.nome} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} corPrimaria={props.corPrimaria} corSegundaria={props.corSegundaria} />
+                        colaboradores.map((colaborador, indice) =>
+                            <Colaborador key={indice} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} corPrimaria={time.corPrimaria} corSegundaria={time.corSegundaria} />
                         )
                     }
                 </div>
             </section>
             :
             <section className="time" style={css_segundaria} >
-                <h3 style={{ borderColor: props.corPrimaria }}>
-                    {props.nome}
+                <h3 style={{ borderColor: time.corPrimaria }}>
+                    {time.nome}
                 </h3>
 
                 <div className="colaboradores">
-                  <b>Ainda não existe nenhum colaborador cadastrado nesse TIME..</b>
+                    <b>Ainda não existe nenhum colaborador cadastrado nesse TIME..</b>
                 </div>
             </section>
 
