@@ -23,6 +23,6 @@ ant design - uma biblioteca de components prontos
 
 
 # Link do projeto no VERCEL
-Segue o link desse projeto no [***Vercel***](https://app-organo.vercel.app/)
+Segue o link desse projeto no [***Vercel - click aqui***](https://app-organo.vercel.app/) ou https://app-organo.vercel.app/
 
 
