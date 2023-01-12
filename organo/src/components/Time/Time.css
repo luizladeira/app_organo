@@ -4,6 +4,7 @@
     left: 0px;
     background: rgba(0, 200, 111, 0.15);
     margin-bottom: 10px;
+    position:relative;
 }
 
 .time section {
@@ -27,4 +28,23 @@
     justify-content: space-around;
     margin-top: 32px;
     flex-wrap: wrap; 
+}
+/*
+.input-cor{
+    position:absolute;
+    top:20px;
+    right: 50px;
+}
+*/
+.input-cor{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 37px;
+    height: 35px;
+    border: solid 1px #000;
+    border-radius: 153px;
+    transform: scale(1.05);
+    background-color: white;
+    padding: 5px;
 }

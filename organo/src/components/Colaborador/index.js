@@ -1,11 +1,15 @@
+import { Icon } from '@iconify/react';
 import "./Colaborador.css"
 
-const Colaborador = ({ imagem, nome, cargo, email, corPrimaria, corSegundaria }) => {
+const Colaborador = ({ imagem, nome, cargo, email, corPrimaria, corSegundaria, aoDeletar }) => {
 
     const css_primaria = { backgroundColor: corPrimaria }
-    
+
     return (
         <div className="colaborador">
+            <div className="deletar" onClick={aoDeletar}>
+                <Icon fontSize={25} icon="mdi:close-octagon-outline" />
+            </div>
             <div className="cabecalho" style={css_primaria}>
                 <img src={imagem} alt={nome} />
             </div>
