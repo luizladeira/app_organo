@@ -3,6 +3,8 @@ import Banner from './components/Banner';
 import Formulario from './components/Formulario';
 import Rodape from './components/Rodape';
 import Time from './components/Time';
+import { v4 as uuidv4 } from 'uuid';
+
 
 //Banner é um componente
 
@@ -55,32 +57,39 @@ function App() {
   //TRANSFORMANDO O ARRAY COM STATES
   const [times, setTimes] = useState([
     {
+      id: uuidv4(),
       nome: 'Programação',
-      cor: 'rgb(135, 174, 181)'
+      cor: '#873b3b'
     },
     {
+      id: uuidv4(),
       nome: 'Front-End',
-      cor: 'rgba(68, 116, 116, 0.6)'
+      cor: '#447474'
     },
     {
+      id: uuidv4(),
       nome: 'Data Science',
-      cor: 'rgba(138, 209, 16, 0.6)'
+      cor: '#8ad110'
     },
     {
+      id: uuidv4(),
       nome: 'DevOps',
-      cor: 'rgba(249, 26, 37, 0.6)'
+      cor: '#f91a25'
     },
     {
+      id: uuidv4(),
       nome: 'UX e Design',
-      cor: 'rgba(108, 71, 97, 0.6)'
+      cor: '#6c4761'
     },
     {
+      id: uuidv4(),
       nome: 'Mobile',
-      cor: 'rgba(192, 197, 32, 0.6)'
+      cor: '#c0c520'
     },
     {
+      id: uuidv4(),
       nome: 'Inovação e Gestão',
-      cor: 'rgba(31, 180, 255, 0.6)'
+      cor: '#1fb4ff'
     },
   ]);
 
@@ -97,10 +106,10 @@ function App() {
     console.log('Deletando Colaborador');
   }
 
-  function mudarCorTime(cor, nome) {
+  function mudarCorTime(cor, id) {
     setTimes(times.map(time => {
 
-      if (time.nome === nome) {
+      if (time.id === id) {
         time.cor = cor;
       }
       console.log(time);

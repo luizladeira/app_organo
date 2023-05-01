@@ -29,6 +29,17 @@ ant design - uma biblioteca de components prontos
 # Cores RGBA
 npm install --save hex-to-rgba
 
+# Pacote UUID 
+Esse pacote é para criar id's visto que o react não consegue inserir eles.
+npm install uuid
+
+Exemplo:
+import { v4 as uuidv4 } from 'uuid';
+uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+
+
+
+
 # Link do projeto no VERCEL
 Segue o link desse projeto no [***Vercel - click aqui***](https://app-organo.vercel.app/) ou https://app-organo.vercel.app/
 

@@ -4,14 +4,13 @@ import hexToRgba from 'hex-to-rgba'
 
 const Colaborador = ({ imagem, nome, cargo, email, cor, aoDeletar }) => {
 
-    const css_primaria = { backgroundColor: hexToRgba(cor, '0.6') }
-
-    return (
+    console.log('a cor é: '+cor);
+       return (
         <div className="colaborador">
             <div className="deletar" onClick={aoDeletar}>
                 <Icon fontSize={25} icon="mdi:close-octagon-outline" />
             </div>
-            <div className="cabecalho" style={css_primaria}>
+            <div className="cabecalho" style={{ backgroundColor: hexToRgba(cor, '0.6') }}>
                 <img src={imagem} alt={nome} />
             </div>
             <div className="rodape">

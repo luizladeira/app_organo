@@ -13,7 +13,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
                     {time.nome}
                 </h3>
 
-                <input onChange={evento => mudarCor(evento.target.value, time.nome)} type='color' className='input-cor' value={time.cor} title="Clique aqui para mudar a cor dos Profissionais" />
+                <input onChange={evento => mudarCor(evento.target.value, time.id)} type='color' className='input-cor' value={time.cor} title="Clique aqui para mudar a cor dos Profissionais" />
 
                 <div className="colaboradores">
                     {
