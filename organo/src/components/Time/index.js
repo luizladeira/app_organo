@@ -8,7 +8,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
     return (
         (colaboradores.length > 0) ?
 
-            <section className="time" style={{backgroundColor: hexToRgba(time.cor, '0.6') }}>
+            <section className="time" style={{backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.6') }}>
                 <h3 style={{ borderColor: time.cor }}>
                     {time.nome}
                 </h3>
@@ -24,7 +24,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
                 </div>
             </section>
             :
-            <section className="time" style={{backgroundColor: hexToRgba(time.cor, '0.6')}} >
+            <section className="time" style={{backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.6')}} >
                 <h3 style={{ borderColor: time.cor }}>
                     {time.nome}
                 </h3>

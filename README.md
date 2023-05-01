@@ -26,6 +26,8 @@ Se der erro no iconify rodar: npm install --save-dev @iconify/react
 react mui - uma biblioteca de components prontos do material ui
 ant design - uma biblioteca de components prontos
 
+# Cores RGBA
+npm install --save hex-to-rgba
 
 # Link do projeto no VERCEL
 Segue o link desse projeto no [***Vercel - click aqui***](https://app-organo.vercel.app/) ou https://app-organo.vercel.app/
