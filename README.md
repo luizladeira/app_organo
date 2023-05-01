@@ -17,6 +17,11 @@ Criar organogramas com react js
 npx create-react-app organo - [nome_do_projeto]
 **Obs.:** Esse comando cria toda a estrutura do react js com a estruturação do css, js, html entre outros.
 
+# Rodando o projeto
+npm start
+
+Se der erro no iconify rodar: npm install --save-dev @iconify/react
+
 # Exemplo de components prontos para usar
 react mui - uma biblioteca de components prontos do material ui
 ant design - uma biblioteca de components prontos
