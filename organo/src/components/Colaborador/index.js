@@ -1,9 +1,10 @@
 import { Icon } from '@iconify/react';
 import "./Colaborador.css"
+import hexToRgba from 'hex-to-rgba'
 
-const Colaborador = ({ imagem, nome, cargo, email, corPrimaria, corSegundaria, aoDeletar }) => {
+const Colaborador = ({ imagem, nome, cargo, email, cor, aoDeletar }) => {
 
-    const css_primaria = { backgroundColor: corPrimaria }
+    const css_primaria = { backgroundColor: hexToRgba(cor, '0.6') }
 
     return (
         <div className="colaborador">

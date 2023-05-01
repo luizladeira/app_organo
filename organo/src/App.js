@@ -56,38 +56,31 @@ function App() {
   const [times, setTimes] = useState([
     {
       nome: 'Programação',
-      corPrimaria: '#95FFD4',
-      corSegundaria: '#D9F7E9'
+      cor: '#D9F7E9'
     },
     {
       nome: 'Front-End',
-      corPrimaria: '#82CFFA',
-      corSegundaria: '#E8FFFF'
+      cor: '#E8FFFF'
     },
     {
       nome: 'Data Science',
-      corPrimaria: '#A6D157',
-      corSegundaria: '#F0F8E2'
+      cor: '#F0F8E2'
     },
     {
       nome: 'DevOps',
-      corPrimaria: '#E06B69',
-      corSegundaria: '#FDE7E8'
+      cor: '#FDE7E8'
     },
     {
       nome: 'UX e Design',
-      corPrimaria: '#DB6EBF',
-      corSegundaria: '#FAE9F5'
+      cor: '#FAE9F5'
     },
     {
       nome: 'Mobile',
-      corPrimaria: '#FFEE0F',
-      corSegundaria: '#FEFFE1'
+      cor: '#FEFFE1'
     },
     {
       nome: 'Inovação e Gestão',
-      corPrimaria: '#FF8A29',
-      corSegundaria: 'rgba(255, 140, 42, 0.15)'
+      cor: 'rgba(255, 140, 42, 0.15)'
     },
   ]);
 
@@ -108,7 +101,7 @@ function App() {
     setTimes(times.map(time => {
 
       if (time.nome === nome) {
-        time.corPrimaria = cor;
+        time.cor = cor;
       }
       console.log(time);
       return time;
