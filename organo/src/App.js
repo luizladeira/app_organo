@@ -56,7 +56,7 @@ function App() {
   const [times, setTimes] = useState([
     {
       nome: 'Programação',
-      cor: 'rgba(217, 247, 233, 0.6)'
+      cor: 'rgb(135, 174, 181)'
     },
     {
       nome: 'Front-End',
