@@ -56,31 +56,31 @@ function App() {
   const [times, setTimes] = useState([
     {
       nome: 'Programação',
-      cor: '#D9F7E9'
+      cor: 'rgba(217, 247, 233, 0.6)'
     },
     {
       nome: 'Front-End',
-      cor: '#E8FFFF'
+      cor: 'rgba(68, 116, 116, 0.6)'
     },
     {
       nome: 'Data Science',
-      cor: '#F0F8E2'
+      cor: 'rgba(138, 209, 16, 0.6)'
     },
     {
       nome: 'DevOps',
-      cor: '#FDE7E8'
+      cor: 'rgba(249, 26, 37, 0.6)'
     },
     {
       nome: 'UX e Design',
-      cor: '#FAE9F5'
+      cor: 'rgba(108, 71, 97, 0.6)'
     },
     {
       nome: 'Mobile',
-      cor: '#FEFFE1'
+      cor: 'rgba(192, 197, 32, 0.6)'
     },
     {
       nome: 'Inovação e Gestão',
-      cor: 'rgba(255, 140, 42, 0.15)'
+      cor: 'rgba(31, 180, 255, 0.6)'
     },
   ]);
 
