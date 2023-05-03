@@ -6,7 +6,7 @@ const Colaborador = ({ id, imagem, nome, cargo, email, cor, aoDeletar }) => {
 
     //console.log('a cor é: '+cor);
     
-    //Nota: foi criado uma herofunction no onclick porque senão ele irá excluir tudo ao inves do que foi clicado
+    //Nota: foi criado uma arrow function no onclick porque senão ele irá excluir tudo ao inves do que foi clicado
 
        return (
         <div className="colaborador">
