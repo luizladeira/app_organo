@@ -18,7 +18,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
                 <div className="colaboradores">
                     {
                         colaboradores.map((colaborador, indice) =>
-                            <Colaborador key={indice} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} cor={time.cor} aoDeletar={aoDeletar} />
+                            <Colaborador key={indice} id={colaborador.id} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} cor={time.cor} aoDeletar={aoDeletar} />
                         )
                     }
                 </div>

@@ -22,7 +22,7 @@ const Formulario = (props) => {
             time: time
         })
 
-        console.log('form foi submetido => ', 'nome:' + nome, 'email: '+ email, 'cargo:' + cargo, 'imagem:' + imagem, 'time: ' + time)
+        //console.log('form foi submetido => ', 'nome:' + nome, 'email: '+ email, 'cargo:' + cargo, 'imagem:' + imagem, 'time: ' + time)
         
         setNome('')
         setEmail('')

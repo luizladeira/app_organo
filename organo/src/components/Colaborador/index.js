@@ -2,12 +2,15 @@ import { Icon } from '@iconify/react';
 import "./Colaborador.css"
 import hexToRgba from 'hex-to-rgba'
 
-const Colaborador = ({ imagem, nome, cargo, email, cor, aoDeletar }) => {
+const Colaborador = ({ id, imagem, nome, cargo, email, cor, aoDeletar }) => {
 
-    console.log('a cor é: '+cor);
+    //console.log('a cor é: '+cor);
+    
+    //Nota: foi criado uma herofunction no onclick porque senão ele irá excluir tudo ao inves do que foi clicado
+
        return (
         <div className="colaborador">
-            <div className="deletar" onClick={aoDeletar}>
+            <div className="deletar" onClick={() => aoDeletar(id)}>
                 <Icon fontSize={25} icon="mdi:close-octagon-outline" />
             </div>
             <div className="cabecalho" style={{ backgroundColor: hexToRgba(cor, '0.6') }}>

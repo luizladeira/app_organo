@@ -10,7 +10,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
-
   /*
   OBS.: Para que a cor do background do TIME seja de acordo com o input os items não podem ser uma constante e sim uma state
   pois o react não consegue redenrizar a cor no background
@@ -193,8 +192,10 @@ function App() {
     setColaboradores([...colaboradores, colaborador]) // coloca os array antigo e insere o ultimo colaborador
   }
 
-  function deletarColaborador() {
-    console.log('Deletando Colaborador');
+  function deletarColaborador(id) {
+    //console.log('Deletando Colaborador: ', id);
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id != id))
+
   }
 
   function mudarCorTime(cor, id) {
@@ -203,7 +204,7 @@ function App() {
       if (time.id === id) {
         time.cor = cor;
       }
-      console.log(time);
+      //console.log(time);
       return time;
     }));
   }
