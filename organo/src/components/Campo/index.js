@@ -1,14 +1,15 @@
 //import { useState } from 'react'
-import './CampoTexto.css'
+import './Campo.css'
 
-const CampoTexto = (props) => {
+/* ANTIGO
+const Campo = (props) => {
 
     const placeholderModificada = `${props.placeholder}...`
 
 
     //MUDANÇA NO ESTADO DO VALOR
 
-    /* 
+   
         hooks (GANCHO) - é alguma coisa que o react entrega para gente para que conseguimos pegar o estado dentro de uma função
         valor: para ler 
         setValor: para escrever
@@ -21,7 +22,7 @@ const CampoTexto = (props) => {
                 setValor(evento.target.value)
                 console.log(valor)
             }
-    */
+   
 
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)
@@ -29,7 +30,7 @@ const CampoTexto = (props) => {
 
 
     return (
-        <div className="campo-texto">
+        <div className="campo">
             <label>
                 {props.label}
             </label>
@@ -37,5 +38,16 @@ const CampoTexto = (props) => {
         </div>
     )
 }
+*/
 
-export default CampoTexto
+const Campo = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
+    return (
+        <div className={`campo campo-${type}`}>
+            <label>{label}</label>
+            <input type={type} value={valor} onChange={evento => aoAlterado(evento.target.value)} required />
+        </div>
+    )
+}
+
+
+export default Campo
