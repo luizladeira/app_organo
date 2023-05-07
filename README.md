@@ -44,3 +44,7 @@ uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 Segue o link desse projeto no [***Vercel - click aqui***](https://app-organo.vercel.app/) ou https://app-organo.vercel.app/
 
 
+# NOTAS
+A diferença entre two-way data binding e one-way data binding;
+Por que o React utiliza one-way data binding;
+Por que utilizar id é importante no React.
