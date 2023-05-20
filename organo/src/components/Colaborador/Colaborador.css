@@ -44,8 +44,20 @@
     top: -10px;*/
     right: 0px;
     top: 0px;
-    background-color: white;
+    background-color: whitesmoke;
     width: 9%;
     height: 7%;
-    border-radius: 41%;
+    border-radius: 20%;
+}
+
+.favorito{
+    position:absolute;
+    /*right: -5px;
+    top: -10px;*/
+    left: 0px;
+    top: 0px;
+    background-color: whitesmoke;
+    width: 9%;
+    height: 7%;
+    border-radius: 20%;
 }

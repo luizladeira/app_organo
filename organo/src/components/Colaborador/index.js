@@ -1,18 +1,23 @@
-import { Icon } from '@iconify/react';
+import { AiOutlineDelete, AiOutlineStar, AiTwotoneStar } from 'react-icons/ai';
 import "./Colaborador.css"
 import hexToRgba from 'hex-to-rgba'
 
-const Colaborador = ({ id, imagem, nome, cargo, email, cor, aoDeletar }) => {
+const Colaborador = ({ id, favorito, imagem, nome, cargo, email, cor, aoDeletar, aoFavoritar }) => {
 
-    //console.log('a cor é: '+cor);
     
     //Nota: foi criado uma arrow function no onclick porque senão ele irá excluir tudo ao inves do que foi clicado
+    function favoritar() {
+        aoFavoritar(id);
+    }
 
-       return (
+    return (
         <div className="colaborador">
             <div className="deletar" onClick={() => aoDeletar(id)}>
-                <Icon fontSize={25} icon="mdi:close-octagon-outline" />
+                <AiOutlineDelete fontSize={25} />
             </div>
+            <div className='favorito'>
+                    {favorito ? <AiTwotoneStar color="#e72537" size={25} onClick={favoritar} /> : <AiOutlineStar size={25} onClick={favoritar} />}
+                </div>
             <div className="cabecalho" style={{ backgroundColor: hexToRgba(cor, '0.6') }}>
                 <img src={imagem} alt={nome} />
             </div>

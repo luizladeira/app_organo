@@ -3,7 +3,7 @@ import './Time.css'
 import hexToRgba from 'hex-to-rgba'
 
 
-const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
+const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
     
     return (
         (colaboradores.length > 0) ?
@@ -18,7 +18,7 @@ const Time = ({ time, colaboradores, aoDeletar, mudarCor }) => {
                 <div className="colaboradores">
                     {
                         colaboradores.map((colaborador, indice) =>
-                            <Colaborador key={indice} id={colaborador.id} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} cor={time.cor} aoDeletar={aoDeletar} />
+                            <Colaborador key={indice} id={colaborador.id} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} email={colaborador.email} cor={time.cor} aoDeletar={aoDeletar} favorito={colaborador.favorito} aoFavoritar={aoFavoritar} />
                         )
                     }
                 </div>
